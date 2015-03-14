@@ -7,6 +7,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetForumMVC", "NetForumMVC\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetForumMVC.Tests", "NetForumMVC.Tests\NetForumMVC.Tests.csproj", "{AD6D194A-1B36-4F6D-826B-2D45FEAF20F0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{E44EB60F-BD32-4F8E-B3FA-7BBFDC5FA897}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{F8CA6ECA-346C-40F5-901B-D6555A6BBCB6}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\NetForumMVC-WAWS-dev.json = PublishScripts\Configurations\NetForumMVC-WAWS-dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +35,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F8CA6ECA-346C-40F5-901B-D6555A6BBCB6} = {E44EB60F-BD32-4F8E-B3FA-7BBFDC5FA897}
 	EndGlobalSection
 EndGlobal
